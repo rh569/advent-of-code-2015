@@ -12,5 +12,5 @@ class Vec2:
         return (int(parts[0]), int(parts[1]))
 
     def to_string(self):
-        return f'${self.x},${self.y}'
+        return f'{self.x},{self.y}'
 
