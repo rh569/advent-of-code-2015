@@ -9,10 +9,8 @@ def part_one(start: int = 0, leading: str = '00000'):
 
     while not hash.startswith(leading):
         salt += 1
-        md5_hasher = md5()
         bytes = f'{INPUT}{salt}'.encode('utf-8')
-        md5_hasher.update(bytes)
-        hash = md5_hasher.hexdigest()
+        hash = md5(bytes).hexdigest()
 
     return salt
 
