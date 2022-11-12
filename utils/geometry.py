@@ -9,7 +9,7 @@ class Vec2:
     def from_string(cls, str: str):
         parts = str.split(',')
 
-        return (int(parts[0]), int(parts[1]))
+        return cls(int(parts[0]), int(parts[1]))
 
     def to_string(self):
         return f'{self.x},{self.y}'

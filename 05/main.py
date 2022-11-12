@@ -1,4 +1,3 @@
-
 from typing import List
 from utils.input import get_lines
 
