@@ -1,6 +1,6 @@
 import pytest
 
-from days.day_07.lib import part_one
+from days.day_07.main import part_one
 from utils.input import get_lines
 
 @pytest.mark.parametrize('target,value', [

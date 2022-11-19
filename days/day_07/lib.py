@@ -128,20 +128,3 @@ def run_all_gates(gates: List[Gate], gates_by_output_id: Dict[str, Gate], target
                 return g.output_wire.signal
 
     raise RuntimeError(f'No solution after {pass_limit} passes')
-
-
-def part_one(input: List[str], target: str):
-    gates = list(map(Gate, input))
-    gates_by_output_id = make_gate_map(gates)
-
-    return run_all_gates(gates, gates_by_output_id, target, 1000)
-
-
-def part_two(input: List[str], target: str):
-    gates = list(map(Gate, input))
-    gates_by_output_id = make_gate_map(gates)
-
-    # Set signal for 'b' to that of 'a' from part one
-    gates_by_output_id["b"].input_one.signal = part_one(get_lines(__file__), "a")
-
-    return run_all_gates(gates, gates_by_output_id, target, 1000)
