@@ -25,5 +25,6 @@ def part_two(input: str) -> int:
 
     raise RuntimeError('did not reach basement (floor -1)')
 
-print(f'Part 1: {part_one(get_input(__file__))}')
-print(f'Part 2: {part_two(get_input(__file__))}')
+def run():
+    print(f'Part 1: {part_one(get_input(__file__))}')
+    print(f'Part 2: {part_two(get_input(__file__))}')

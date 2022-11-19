@@ -87,5 +87,6 @@ def count_lights(lights: List[List[int]]) -> int:
 
     return count
 
-print(f'Part 1: {part_one(get_lines(__file__))}')
-print(f'Part 2: {part_two(get_lines(__file__))}')
+def run():
+    print(f'Part 1: {part_one(get_lines(__file__))}')
+    print(f'Part 2: {part_two(get_lines(__file__))}')

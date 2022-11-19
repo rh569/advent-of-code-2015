@@ -1,15 +1,21 @@
 # Advent of Code 2015
 
-## Restrictions
-
-* Python
-
 ## Setup
 
-Project was setup for use with venv using `python -m venv venv`.
+Project was setup for use with venv using `python -m venv venv` and should use Python version >=3.8.2.
 
-In order for the scripts on each day to be able to import the local modules, they must be run from the project root as modules. For example:
+## Running the code
 
 ```
-(venv) advent-of-code-2015 % python -m 01.main
+(venv) advent-of-code-2015 % python run.py <day>
+```
+
+## Tests
+
+To run the tests, first install dependencies and then run `pytest`:
+
+```
+pip install -r requirements.txt
+
+pytest
 ```

@@ -17,5 +17,6 @@ def part_one(start: int = 0, leading: str = '00000'):
 def part_two():
     return part_one(117946, '000000')
 
-print(f'Part 1: {part_one()}')
-print(f'Part 2: {part_two()}')
+def run():
+    print(f'Part 1: {part_one()}')
+    print(f'Part 2: {part_two()}')
